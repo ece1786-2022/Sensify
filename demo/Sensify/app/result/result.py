@@ -58,8 +58,12 @@ def recommend():
 
 @result_blueprint.route("/result", methods=['GET', 'POST'])
 def result():
+
     authorization_header = session['authorization_header']
-    user_id = session['user_id']
+    user_profile_api_endpoint = f"https://api.spotify.com/v1/me"
+    profile_data = requests.get(user_profile_api_endpoint, headers=authorization_header).text
+    profile_data = json.loads(profile_data)
+    user_id = profile_data['id']
 
     playlist_name = request.form.get('playlist_name')
     playlist_data = json.dumps({
