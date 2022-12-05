@@ -1,0 +1,151 @@
+body {
+    background: #191414;
+    background-image: #191414;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    background: #1DB954;
+    border-style: none;
+    box-shadow: none;
+    /*height: 100%;*/
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.d-xl-flex.align-items-xl-start {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 70%;
+    }
+}
+
+#login-btn {
+    box-shadow: 0 0 10px #1DB954;
+    font-family: Montserrat, serif;
+    border-radius: 11px;
+    width: 200px;
+    height: 41px;
+}
+
+#login-btn:hover {
+    color: #1DB954;
+    background-color: #191414;
+}
+
+@media (min-width: 576px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .list-group {
+        margin-right: 35%;
+        margin-left: 35%;
+    }
+}
+
+@media (min-width: 992px) {
+    .list-group {
+        margin-right: 24%;
+        margin-left: 24%;
+    }
+}
+
+@media (min-width: 768px) {
+    .list-group {
+        margin-right: 21%;
+        margin-left: 21%;
+    }
+}
+
+@media (min-width: 576px) {
+    .list-group {
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 300px) {
+    .list-group {
+        margin: 10px;
+    }
+
+    .list-group li {
+        font-size: 15px;
+    }
+
+    .list-group span {
+        padding-right: 5px;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .list-group {
+        margin-right: 35%;
+        margin-left: 35%;
+    }
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-family: Montserrat, serif;
+}
+
+.list-group {
+    border-radius: 20px;
+}
+
+.text-center {
+    margin: 30px;
+    align-items: center;
+}
+
+.h1, h1 {
+    color: #1DB954;
+    text-align: center;
+    padding-top: 34px;
+    font-family: Montserrat, serif;
+    font-size: 52px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.container {
+    margin: auto;
+}
+
+.main-p {
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding-top: 13px;
+    font-family: Montserrat, serif;
+    font-size: 36px;
+}
