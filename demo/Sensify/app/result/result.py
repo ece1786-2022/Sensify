@@ -3,7 +3,7 @@ import requests
 import torch
 from flask import render_template, Blueprint, request, redirect, url_for, session
 from transformers import pipeline
-classifier = pipeline("text-classification", model="dinolii/ece1786", tokenizer="dinolii/ece1786", top_k=None)
+classifier = pipeline("text-classification", model="dinolii/ece1786", tokenizer="dinolii/ece1786", return_all_scores=True)
 result_blueprint = Blueprint('result_bp', __name__, template_folder='templates')
 
 
