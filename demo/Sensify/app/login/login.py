@@ -33,5 +33,4 @@ def callback():
     spotify_client.get_authorization(auth_token)
     authorization_header = spotify_client.authorization_header
     session['authorization_header'] = authorization_header
-    print(authorization_header)
     return redirect(url_for("input_bp.input"))

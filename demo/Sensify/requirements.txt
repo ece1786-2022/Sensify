@@ -1,4 +1,4 @@
-transformers
+transformers==4.24.0
 torch
 autopep8==1.5.4
 certifi==2020.6.20
